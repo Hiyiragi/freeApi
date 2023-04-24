@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="freeApi.js" defer></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: antiquewhite;
+            width: 500px;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .item{
+            flex-basis: auto;
+            border: 3px solid brown;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 20px
+        }
+        
+        #title{
+            flex-basis: 20%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        button{
+            width: 70px;
+            height: 60px;
+            align-self: center;
+            border-radius: 10px;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div id="title">Three Cat facts</div>
+        <div class= "item" id="firstFact">First Fact</div>
+        <div class= "item" id="secondFact">Second Fact</div>
+        <div class= "item" id="thirdFact">Third Fact</div>
+        <button onclick="printData()">Reveal!</button>
+    </main>
+</body>
+</html>
